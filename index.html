@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vinay Aggarwal | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.css?_v=20240124214518">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="High-quality website development focuses on responsive design, cross-browser compatibility, engaging animation, including accessibility, usability, and performance, clean and valid code, semantic structure, and adherence to BEM methodology.">
+    <style>
+        /* CSS for fade-in effect */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="_shader"></div>
+        <header class="header">
+            <div class="header__container">
+                <div class="header__wrapper">
+                    <nav class="header__menu menu">
+                        <a class="menu__home" href="#hero">Home</a>
+                        <ul class="menu__items">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#hire">Contacts</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="js/VINAY AGGARWAL_RESUME.pdf" target="_blank">Resume</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__container">
+                <div class="page__wrapper">
+
+                    <!-- ============== HERO ================================ -->
+
+                    <section class="hero" id="hero">
+                        <div class="hero__text-content">
+                            <div data-popup="#popup" class="hero__subtitle subtitle">Vinay Aggarwal</div>
+                            <h1 class="hero__title title title_hero">Hello, It's me 👋 </h1>
+                            <!-- Typing text -->
+                            <div class="typing-text">
+                                <span class="typing-text__text"></span>
+                                <!-- Stings for text typing -->
+                                <div class="typing-text__strings" id="typed-strings">
+                                    <span></span>
+                                    <span>I'm a Student!!</span>
+                                    <span>I'm an AI Enthusiast!!</span>
+                                         
+                                </div>
+                            </div>
+
+                            <p class="hero__descr">You're in the right place!<br>
+                               
+
+I am an Artificial Intelligence and Data Science student currently in my third year of pursuing a BTech degree. My expertise covers a broad spectrum, from AI and machine learning to data analysis, algorithms, and cutting-edge technology. Feel free to reach out if you're looking to innovate, explore AI solutions, or need assistance with your tech projects!</p>
+                            <div class="hero__btns">
+                                <a href="#portfolio" class="hero__portfolio-btn btn btn_second">My Works</a>
+                                <a href="#hire" class="hero__hire-btn btn btn_main">Contact Me!</a>
+                            </div>
+                        </div>
+                        <div class="hero__media media-hero">
+                            <div class="media-hero__man">
+                                <picture><source srcset="img/hero/man.webp" type="image/webp"><img src="img/hero/man.png" width="400" height="400" alt="developer with laptop"></picture>
+                            </div>
+                            <div class="media-hero__mouse">
+                                <picture><source srcset="img/hero/mouse.webp" type="image/webp"><img src="img/hero/mouse.png" width="100" height="100" alt="mouse"></picture>
+                            </div>
+                            <div class="media-hero__like">
+                                <picture><source srcset="img/hero/like.webp" type="image/webp"><img src="img/hero/like.png" width="100" height="100" alt="like"></picture>
+                            </div>
+                            <div class="media-hero__webcam">
+                                <picture><source srcset="img/hero/webcam.webp" type="image/webp"><img src="img/hero/webcam.png" width="100" height="100" alt="toroid"></picture>
+                            </div>
+                            <div class="media-hero__keyboard">
+                                <picture><source srcset="img/hero/keyboard.webp" type="image/webp"><img src="img/hero/keyboard.png" width="100" height="100" alt="toroid"></picture>
+                            </div>
+                            <div class="media-hero__joistick">
+                                <picture><source srcset="img/hero/joistick.webp" type="image/webp"><img src="img/hero/joistick.png" width="100" height="100" alt="joistick"></picture>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ============== PORTFOLIO ================================ -->
+
+                    <section class="portfolio" id="portfolio">
+                        <div class="portfolio__subtitle subtitle fade-in">portfolio</div>
+                        <h2 class="portfolio__title title fade-in">Latest Works</h2>
+
+                        <div class="portfolio__works">
+                            <div class="portfolio__work work fade-in">
+                                <div class="work__text">
+                                    <h3 class="work__title">Whatsapp Forensic Analyzer</h3>
+                                    <p class="work__descr">I deployed a Streamlit application that allows users to upload chat files from WhatsApp and automatically generate a comprehensive analysis report. The report includes visualizations like heatmaps and word clouds, as well as advanced features such as criminal analysis, link extraction, and more.
+                                    </p>
+                                    <a class="work__link btn btn_second" href="https://chat-forensic.streamlit.app/" target="_blank">Live
+                                        Preview
+                                    </a>
+                                </div>
+                                <a class="work__picture" href="https://chat-forensic.streamlit.app/" target="_blank">
+                                    <picture><source srcset="img/works/whatsapplogo.webp" type="image/webp"><img src="img/works/whatsapplogo.png" loading="lazy" width="798" height="466" alt="Website for IT Company Mockup"></picture>
+                                </a>
+                            </div>
+
+                            <div class="portfolio__work work work_reverse fade-in">
+                                <div class="work__text">
+                                    <h3 class="work__title">Advanced Retrieval-Augmented Generation (RAG) System with Multi-File and LLM Integration</h3>
+                                    <p class="work__descr">
+                                        This project showcases a comprehensive Retrieval-Augmented Generation (RAG) system designed to handle a variety of document types, including PDFs, Word files, TXT files, and URLs. The system extracts text from these sources and uses SentenceTransformer to vectorize the content. It employs FAISS for fast and accurate content retrieval. The application integrates with the LLM Model mixtral-8x7b-32768 provided by Groq for generating contextually relevant answers to user queries. The system also features an interactive chat interface, allowing users to engage with the LLM for dynamic, intelligent responses.
+                                    </p>
+                                    <a class="work__link btn btn_second" href="https://youtu.be/pbh8sjB49Ec?si=n5pb-M658etoUojV" target="_blank">Live
+                                        Preview
+                                    </a>
+                                </div>
+                                <a class="work__picture" href="https://github.com/Vinay9911/RAG-System-with-Multi-Source-Content-Extraction-and-LLM-Integration/tree/my-new-branch2" target="_blank">
+                                    <picture><source srcset="img/works/rag.webp" type="image/webp"><img src="img/works/rag.png" loading="lazy" width="798" height="466" alt="Website for Restaurant Mockup"></picture>
+                                </a>
+                            </div>
+
+                            <div class="portfolio__work work fade-in">
+                                <div class="work__text">
+                                    <h3 class="work__title">NLP-Driven FAQ Chatbot with Comprehensive User Interaction Analysis</h3>
+                                    <p class="work__descr">Developed a Flask-based intelligent chatbot that leverages TF-IDF and cosine similarity to efficiently match user queries with answers stored in a JSON-based knowledge base. The chatbot dynamically finds the most relevant answers by comparing user inputs to predefined questions, ensuring accurate responses. Additionally, it features a comprehensive interaction logging system, capturing user queries, chatbot responses, and feedback for continuous improvement. This project highlights skills in Flask, natural language processing, and interaction tracking, making it a valuable addition to any portfolio.</p>
+                                    <a class="work__link btn btn_second" href="https://youtu.be/VXSD3ub4E-I?si=9uKS7C1LaEhdCJiW" target="_blank">Live
+                                        Preview
+                                    </a>
+                                </div>
+                                <a class="work__picture" href="https://github.com/Vinay9911/ChatBot1/tree/my-new-branch" target="_blank">
+                                    <picture><source srcset="img/works/chatbot.webp" type="image/webp"><img src="img/works/chatbot.png" loading="lazy" width="798" height="466" alt="Advent Calendar Mockup"></picture>
+                                </a>
+                            </div>
+
+                            <div class="portfolio__work work work_reverse fade-in">
+                                <div class="work__text">
+                                    <h3 class="work__title">Real Time Multiple Barcode And QR Code Decoding System</h3>
+                                    <p class="work__descr">This project demonstrates a real-time multiple barcodes decoding system using Python. The application is built using the pyzbar, treepoem, and cv2 libraries, enabling users to decode them through live video capture and store them in word file.This project is ideal for applications requiring automated barcode processing, such as inventory management, retail systems, or access control. </p>
+                                    <a class="work__link btn btn_second" href="https://youtu.be/Yplp_AYfyEs" target="_blank">Live
+                                        Preview
+                                    </a>
+                                </div>
+                                <a class="work__picture" href="https://github.com/Vinay9911/Real-Time-Multiple-Barcode-Decoding-System/tree/barcode-detector" target="_blank">
+                                    <picture><source srcset="img/works/barcode2.webp" type="image/webp"><img src="img/works/barcode2.png" loading="lazy" width="798" height="466" alt="Christmas Fun Game Mockup"></picture>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ============ CONTACT ME ================== -->
+                    <section class="hire" id="hire">
+                        <div class="hire__subtitle subtitle fade-in">Let's Get in Touch!</div>
+                        <h2 class="hire__title title fade-in"></h2>
+                        <div class="hire__wrapper fade-in">
+                             
+                            <p>Email: <a href="mailto:vinayaggarwal271@gmail.com">vinayaggarwal271@gmail.com</a></p>
+                            <p>Phone: +91 8826986127</p>
+                            <p>LinkedIn: <a href="https://www.linkedin.com/in/vinay-aggarwal1/" target="_blank">https://www.linkedin.com/in/vinay-aggarwal1/</a></p>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__wrapper">
+                    <div class="footer__text">Designed by Vinay Aggarwal © 2024</div>
+                    <div class="footer__social-icons social-icons _anim__parent">
+                        <a href="https://github.com/Vinay9911" class="social-icon" target="_blank">
+                            <picture><source srcset="img/icons/github.webp" type="image/webp"><img src="img/icons/github.png" loading="lazy" width="50" height="50" alt="github icon"></picture>
+                        </a>
+                        <a href="https://www.linkedin.com/in/vinay-aggarwal1/" class="social-icon" target="_blank">
+                            <picture><source srcset="img/icons/linkedin.webp" type="image/webp"><img src="img/icons/linkedin.png" loading="lazy" width="50" height="50" alt="linkedin icon"></picture>
+                        </a>
+                        <a href="https://www.instagram.com/vinay.aggarwal010?igsh=MXN2aW00b3Bna3g4cA==" class="social-icon" target="_blank">
+                            <picture><source srcset="img/icons/insta.webp" type="image/webp"><img src="img/icons/insta.png" loading="lazy" width="50" height="50" alt="instagram icon"></picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20240124214518"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?_v=20240124214518"></script>
+        <script src="js/app.js?_v=20240124214518"></script>
+        <script>
+            // JavaScript for fade-in effect
+            document.addEventListener("DOMContentLoaded", function() {
+                const fadeInElements = document.querySelectorAll('.fade-in');
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                fadeInElements.forEach(element => {
+                    observer.observe(element);
+                });
+            });
+        </script>
+    </div>
+</body>
+
+</html>
